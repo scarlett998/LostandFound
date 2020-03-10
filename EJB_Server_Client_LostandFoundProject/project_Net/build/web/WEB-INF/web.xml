@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>liststuff</servlet-name>
+        <servlet-class>servlet.liststuff</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>chooseStuff</servlet-name>
+        <servlet-class>servlet.chooseStuff</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>sendEmail</servlet-name>
+        <servlet-class>servlet.sendEmail</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>officeServlet</servlet-name>
+        <servlet-class>servlet.officeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>liststuff</servlet-name>
+        <url-pattern>/liststuff</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>chooseStuff</servlet-name>
+        <url-pattern>/chooseStuff</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>sendEmail</servlet-name>
+        <url-pattern>/sendEmail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>officeServlet</servlet-name>
+        <url-pattern>/officeServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
